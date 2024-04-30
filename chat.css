@@ -56,7 +56,7 @@ body {
 }
 
 #scroll-wrapper {
-  padding-top: 80px;
+  padding-top: 128px;
   padding-bottom: 5.5rem;
 }
 
@@ -66,8 +66,16 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color:#00000000
+  background: linear-gradient(0deg, #222a3f 90%, #00000000);
 
+}
+
+#user-input {
+  overflow-y: auto;
+  resize: none;         /* Prevent user from manually resizing */
+  height: 40px;
+  min-height: 40px;
+  max-height: 200px;    /* Set your desired max height here */
 }
 
 #chat-container {
@@ -92,14 +100,14 @@ body {
   background-color: #222a3f;
 }
 
-.form-control {
-  background-color: #1d2437;
-  border: none;
-  border-radius: 15px;  
-}
-
-.form-select {
+.form-control, .form-select  {
   background-color: #1d2437;
   border: none;
   border-radius:15px;
+}
+
+#ollama-header {
+    z-index: 1030;
+    position:fixed;
+    background: linear-gradient(180deg, #222a3f 75%, #00000000);
 }

@@ -233,7 +233,9 @@ async function submitRequest() {
     });
 
   // Clear user input
-  document.getElementById('user-input').value = '';
+  const element = document.getElementById('user-input');
+  element.value = '';
+  $(element).css("height", textBoxBaseHeight + "px");
 }
 
 // Event listener for Ctrl + Enter or CMD + Enter
@@ -305,3 +307,8 @@ function updateChatList() {
   }
 }
 
+function autoGrow() {
+  const textarea = document.getElementById('user-input');
+  textarea.style.height = textarea.style.minHeight;
+  textarea.style.height = textarea.scrollHeight + 'px';
+}
