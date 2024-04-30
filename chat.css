@@ -56,6 +56,7 @@ body {
 }
 
 #scroll-wrapper {
+  padding-top: 80px;
   padding-bottom: 5.5rem;
 }
 
@@ -94,9 +95,11 @@ body {
 .form-control {
   background-color: #1d2437;
   border: none;
+  border-radius: 15px;  
 }
 
 .form-select {
   background-color: #1d2437;
   border: none;
+  border-radius:15px;
 }
