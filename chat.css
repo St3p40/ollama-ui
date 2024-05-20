@@ -96,6 +96,14 @@ body {
   background-color: #1d2437;
 }
 
+.btn:hover {
+  background-color: #f3568750;
+}
+
+.btn:active {
+  background-color: #f3568780;
+}
+
 .modal-content {
   background-color: #222a3f;
 }
@@ -104,6 +112,10 @@ body {
   background-color: #1d2437;
   border: none;
   border-radius:15px;
+}
+
+.form-control:focus, .form-select:focus{
+  background-color: #1d2437;
 }
 
 #ollama-header {
